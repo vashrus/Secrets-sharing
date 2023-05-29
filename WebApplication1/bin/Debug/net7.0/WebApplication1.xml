@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <member name="M:WebApplication1.Controllers.ApiController.Authenticate(WebApplication1.Model.UserReqeust)">
+            <summary>
+            Authenticate user
+            </summary>
+            <param name="userReqeust">Email and Password</param>
+            <returns>JWT Token</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.Registration(WebApplication1.Model.UserReqeust)">
+            <summary>
+            Registration user
+            </summary>
+            <param name="userReqeust">Email and Password</param>
+            <returns>JWT Token</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.UploadUserFile(Microsoft.AspNetCore.Http.IFormFile,System.Boolean)">
+            <summary>
+            Upload File
+            </summary>
+            <param name="uploadedFile">Selected file by user</param>
+            <param name="mustRemove">File is must be removed after download</param>
+            <returns>File name</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.GetFile(System.String)">
+            <summary>
+            Get File
+            </summary>
+            <param name="fileName">file name</param>
+            <returns>Result of downloading file</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.UploadUserText(System.String,System.Boolean)">
+            <summary>
+            Upload Text
+            </summary>
+            <param name="uploadedText">Printed text by user</param>
+            <param name="mustRemove">Text is must be removed after download</param>
+            <returns>Text name</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.GetText(System.String)">
+            <summary>
+            Get Text
+            </summary>
+            <param name="textName">text name</param>
+            <returns>Result of getting text</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.GetFiles">
+            <summary>
+            Get user Files
+            </summary>
+            <returns>Files list</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.GetText">
+            <summary>
+            Get user texts
+            </summary>
+            <returns>Texts list</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.DeleteText(System.String)">
+            <summary>
+            Delete a user text
+            </summary>
+            <param name="textName">text Name</param>
+            <returns>Deletion result</returns>
+        </member>
+        <member name="M:WebApplication1.Controllers.ApiController.DeleteFile(System.String)">
+            <summary>
+            Delete a user text
+            </summary>
+            <param name="textName">text Name</param>
+            <returns>Deletion result</returns>
+        </member>
+    </members>
+</doc>
